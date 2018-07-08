@@ -16,7 +16,7 @@ automatically create config file.
    1. Execute `dotnet restore `
    1. Execute `dotnet run --project ConfigCreater`
 1. Release Run
-   1. Get [Release](https://github.com/zinntikumugai/ConfigCreator/releases)
+   1. Get [Release](https://github.com/zinntikumugai/ConfigCreater/releases)
    2. Run
 
 # Donation
