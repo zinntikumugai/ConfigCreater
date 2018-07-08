@@ -23,4 +23,3 @@ before_build:
 build:
   parallel: true
   verbosity: detailed
-  project: $(project_name)
