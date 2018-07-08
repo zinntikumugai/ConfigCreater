@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace ConfigCreater {
     class Program {
-        public const string _URL = "";
+        public const string _URL = "https://raw.githubusercontent.com/zinntikumugai/ConfigCreater_Datas/master/datas.json";
 
         public static List<string> _DIRs = new List<string> {
             Path.DirectorySeparatorChar + "AppData" + Path.DirectorySeparatorChar + "Roaming" + Path.DirectorySeparatorChar, //Windows %appdata%
