@@ -1,0 +1,18 @@
+language: csharp
+solution: ConfigCreater.sln
+matrix:
+    include:
+        - os: linux #Ubuntu 
+          dist: trusty
+          sudo: required
+        - os: osx #OSX 10.12
+          osx_image: xcode9
+        - os: osx
+          osx_image: xcode9.2
+dotnet: 2.0.0
+mono: none
+script:
+    - git submodule update --init --recursive
+    - dotnet --info
+    - dotnet restore
+    - dotnet build
