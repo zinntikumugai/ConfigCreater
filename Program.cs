@@ -58,7 +58,6 @@ namespace ConfigCreater {
             Console.WriteLine ("Created temporarily.");
             Console.WriteLine ("Copy?[y/n]");
             string yn = Console.ReadLine ();
-            Console.WriteLine (yn.ToLower ());
             if (yn.ToLower () == "y") {
                 File.Copy (cdata.Nmae.ToLower () + ".conf", confgiPath);
             }
