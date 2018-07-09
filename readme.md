@@ -14,7 +14,7 @@ automatically create config file.
 1. Build Run
    1. Get [.Net Core SDK](https://dot.net/core)
    1. Execute `dotnet restore `
-   1. Execute `dotnet run --project ConfigCreater`
+   1. Execute `dotnet run`
 1. Release Run
    1. Get [Release](https://github.com/zinntikumugai/ConfigCreater/releases)
    2. Run
