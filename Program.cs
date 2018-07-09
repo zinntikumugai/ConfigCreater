@@ -15,7 +15,7 @@ namespace ConfigCreater {
 
         public static List<string> _DIRs = new List<string> {
             Path.DirectorySeparatorChar + "AppData" + Path.DirectorySeparatorChar + "Roaming" + Path.DirectorySeparatorChar, //Windows %appdata%
-            Path.DirectorySeparatorChar + "Libray" + Path.DirectorySeparatorChar, //MacOS ~/Libray/
+            Path.DirectorySeparatorChar + "Library" + Path.DirectorySeparatorChar + "Application Support" + Path.DirectorySeparatorChar, //MacOS ~/Libray/
             Path.DirectorySeparatorChar + ".", //Unix
         };
 
