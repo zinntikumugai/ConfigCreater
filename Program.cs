@@ -38,7 +38,25 @@ namespace ConfigCreater {
             Console.WriteLine ("###############################");
             ConfigWriter (cdata, confgiPath);
             Console.WriteLine ("###############################");
+            BootstrapCopy (dirs);
+            Console.WriteLine ("###############################");
             Console.WriteLine ("Done.");
+        }
+
+        static public void BootstrapCopy (string dir) {
+            if (!File.Exists ("bootstrap.dat"))
+                return;
+            Console.WriteLine ("bootstrap.dat Copy?[y/n]");
+            string yn = Console.ReadLine ();
+            if (yn.ToLower () == "y") {
+                if (File.Exists (dir + "bootstrap.dat")) {
+                    if (File.Exists (dir + "bootstrap.dat.old"))
+                        File.Delete (dir + "bootstrap.dat.old");
+                    File.Move (dir + "bootstrap.dat", dir + "bootstrap.dat.old");
+                }
+                File.Copy ("bootstrap.dat", dir + "bootstrap.dat");
+                Console.WriteLine ("Done.");
+            }
         }
 
         static public void ConfigWriter (CryptoData cdata, string confgiPath) {
